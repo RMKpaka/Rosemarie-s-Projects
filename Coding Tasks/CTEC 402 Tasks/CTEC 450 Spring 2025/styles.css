@@ -1,0 +1,151 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --primary-color: hsl(220, 90%, 56%);
+  --secondary-color: hsl(160, 90%, 45%);
+  --black-color: hsl(0, 0%, 10%);
+  --white-color: hsl(0, 0%, 98%);
+  --text-color: hsl(0, 0%, 30%);
+  --background-color: hsl(220, 20%, 96%);
+  --container-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.4s;
+}
+
+h1, h2, h3, h4 {
+  color: var(--black-color);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/*=============== HEADER & NAVIGATION ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--container-color);
+  padding: 1rem 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  color: var(--black-color);
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  color: var(--primary-color);
+}
+
+/*=============== HOME SECTION ===============*/
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.home__name {
+  font-size: var(--h1-font-size);
+  color: var(--primary-color);
+}
+
+.home__description {
+  font-size: var(--normal-font-size);
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/*=============== PROJECTS SECTION ===============*/
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 2rem;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.projects__item {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects__item:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}

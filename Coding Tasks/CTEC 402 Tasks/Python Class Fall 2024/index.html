@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living - Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Healthy Living</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/tips">Tips</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="{{ url_for('static', filename='hero.jpg') }}" alt="Healthy Living Hero Image">
+            <div class="overlay">
+                <h2>Embrace Wellness</h2>
+                <p>Begin your journey to a vibrant and healthy life.</p>
+            </div>
+        </section>
+        <section class="welcome">
+            <h2>Your Health, Your Future</h2>
+            <p>Explore tips, advice, and insights to achieve your health goals.</p>
+            <p class="datetime">Today's Date and Time: {{ current_time }}</p>
+        </section>
+        <footer>
+            <p>Powered by Flask | <a href="https://www.who.int">WHO</a> | <a href="https://www.cdc.gov">CDC</a> | <a href="https://www.healthline.com">Healthline</a></p>
+        </footer>
+    </main>
+</body>
+</html>

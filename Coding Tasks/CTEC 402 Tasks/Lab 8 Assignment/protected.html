@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome, {{ username }}!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/tips">Tips</a>
+        </nav>
+    </header>
+    <main>
+        <p>This is a protected page that only logged-in users can access.</p>
+
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Image 1">
+            <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Image 2">
+            <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Image 3">
+            <img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="Image 4">
+        </div>
+
+        <h2>Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice Washington</td>
+                    <td>Manager</td>
+                    <td>alice@healthyliving.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Preston</td>
+                    <td>Developer</td>
+                    <td>bob@healthyliving.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Peruvian</td>
+                    <td>Designer</td>
+                    <td>charlie@healthyliving.com</td>
+                </tr>
+                <tr>
+                    <td>Diana Tingcungco</td>
+                    <td>Analyst</td>
+                    <td>diana@healthyliving.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </main>
+</body>
+</html>

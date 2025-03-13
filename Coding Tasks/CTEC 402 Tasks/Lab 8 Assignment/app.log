@@ -1,0 +1,20 @@
+2024-12-10 18:56:43 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-10 18:56:43 - [33mPress CTRL+C to quit[0m
+2024-12-10 18:56:43 -  * Restarting with stat
+2024-12-10 18:56:44 -  * Debugger is active!
+2024-12-10 18:56:44 -  * Debugger PIN: 679-050-859
+2024-12-10 18:59:04 - 127.0.0.1 - - [10/Dec/2024 18:59:04] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-10 18:59:04 - 127.0.0.1 - - [10/Dec/2024 18:59:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-10 18:59:14 - 127.0.0.1 - - [10/Dec/2024 18:59:14] "[33mGET /register HTTP/1.1[0m" 404 -
+2024-12-10 18:59:14 - 127.0.0.1 - - [10/Dec/2024 18:59:14] "[33mGET /register HTTP/1.1[0m" 404 -
+2024-12-10 18:59:18 - 127.0.0.1 - - [10/Dec/2024 18:59:18] "[33mGET /register HTTP/1.1[0m" 404 -
+2024-12-10 18:59:20 - 127.0.0.1 - - [10/Dec/2024 18:59:20] "[33mGET /register HTTP/1.1[0m" 404 -
+2024-12-10 18:59:42 - 127.0.0.1 - - [10/Dec/2024 18:59:42] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-10 18:59:48 - 127.0.0.1 - - [10/Dec/2024 18:59:48] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-10 19:20:30 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-10 19:20:30 - [33mPress CTRL+C to quit[0m
+2024-12-10 19:20:30 -  * Restarting with stat
+2024-12-10 19:20:30 -  * Debugger is active!
+2024-12-10 19:20:30 -  * Debugger PIN: 679-050-859

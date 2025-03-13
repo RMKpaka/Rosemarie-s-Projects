@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosemarie Kpaka | Portfolio</title>
+
+    <!-- External Styles and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">R</span>
+                <span class="nav__logo-name">Rosemarie Kpaka</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About Me</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#contact" class="nav__link nav__link-button">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">Rosemarie Kpaka</h1>
+                <p class="home__description">Cybersecurity & IT Support Specialist with expertise in risk assessment, networking, and cloud computing.</p>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/rosemarie-kpaka-9265431aa" target="_blank" class="home__social-link"><i class="ri-linkedin-box-line"></i></a>
+                    <a href="https://github.com/yourgithub" target="_blank" class="home__social-link"><i class="ri-github-line"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <p>Dedicated IT professional with expertise in cybersecurity, technical support, and problem-solving. Passionate about technology and continuously improving security frameworks.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>Cybersecurity & Risk Assessment</li>
+                <li>Network Infrastructure & Cloud Computing</li>
+                <li>Programming & Technical Support</li>
+            </ul>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <ul>
+                <li><strong>Cybersecurity Risk Assessment Tool</strong> - Developed a tool to assess security vulnerabilities.</li>
+                <li><strong>Automated IT Help Desk System</strong> - Implemented automation for resolving technical issues.</li>
+            </ul>
+        </section>
+
+        <section class="resume section" id="resume">
+            <h2 class="section__title">Resume</h2>
+            <p><a href="Rosemarie_Kpaka_Resume.pdf" download>Download My Resume</a></p>
+            <h3>Education</h3>
+            <p>Bowie State University - Bachelor of Science in Computer Technology (2021 - 2024)</p>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="qr-code section">
+            <h2 class="section__title">Scan to Open</h2>
+            <img src="assets/img/qrcode.png" alt="QR Code" class="qr-code">
+            <p>Scan this QR code to access my portfolio and resume!</p>
+        </section>
+
+        <div id="chatbot-container">
+            <div id="chatbot-header">
+                <span>Chat with me!</span>
+                <i class="ri-chat-3-line"></i>
+            </div>
+            <div id="chatbot-box" style="display: none;">
+                <div id="chatbot-messages"></div>
+                <div class="chatbot-input-container">
+                    <input type="text" id="chatbot-input" placeholder="Type a message..." />
+                    <button id="chatbot-send">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/*=============== VARIABLES ===============*/
+$header-height: 3.5rem;
+
+// Colors
+$primary-color: hsl(220, 90%, 56%);
+$secondary-color: hsl(160, 90%, 45%);
+$black-color: hsl(0, 0%, 10%);
+$white-color: hsl(0, 0%, 98%);
+$text-color: hsl(0, 0%, 30%);
+$background-color: hsl(220, 20%, 96%);
+$container-color: hsl(0, 0%, 100%);
+
+// Font
+$body-font: "Poppins", sans-serif;
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.2rem;
+$normal-font-size: 1rem;
+$small-font-size: 0.875rem;
+$smaller-font-size: 0.75rem;
+
+/*=============== MIXINS ===============*/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-layout($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 1.5rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $body-font;
+  font-size: $normal-font-size;
+  background-color: $background-color;
+  color: $text-color;
+  transition: background-color 0.4s;
+}
+
+h1, h2, h3, h4 {
+  color: $black-color;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+/*=============== HEADER & NAVIGATION ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $container-color;
+  padding: 1rem 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: $h2-font-size;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  color: $black-color;
+  font-weight: 500;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+/*=============== HOME SECTION ===============*/
+.home {
+  @include flex-center;
+  flex-direction: column;
+  height: 90vh;
+  text-align: center;
+}
+
+.home__name {
+  font-size: $h1-font-size;
+  color: $primary-color;
+}
+
+.home__description {
+  font-size: $normal-font-size;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/*=============== PROJECTS SECTION ===============*/
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  .projects__list {
+    @include grid-layout(auto-fit, minmax(300px, 1fr));
+  }
+
+  .projects__item {
+    background-color: $container-color;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: $black-color;
+  color: $white-color;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
