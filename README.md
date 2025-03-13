@@ -41,7 +41,8 @@ This repository aims to:
 
 ## 📩 Contact
 Feel free to connect with me for discussions, collaborations, or feedback:
-- 📧 Email: [Your Email]
-- 🌐 LinkedIn: [Your LinkedIn Profile]
+- 📧 Email:  mariatukpaka@gmail.com
+- 🌐 LinkedIn: https://www.linkedin.com/in/rosemarie-kpaka-9265431aa/
+- 💻 GitHub: https://github.com/RMKpaka
 
 Thank you for visiting my repository! 🚀
